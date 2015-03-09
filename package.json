@@ -24,8 +24,12 @@
     "eslint-friendly-formatter": "^1.0.3",
     "istanbul": "^0.3.7",
     "proxyquire": "^1.4.0",
-    "watch-run": "^1.2.2",
-    "watch-spawn": "^1.0.1"
+    "watch-spawn": "^1.0.1",
+    "mocha": "^2.2.1",
+    "chai": "^1.10.0",
+    "chai-fuzzy": "^1.4.0",
+    "sinon": "^1.12.2",
+    "sinon-chai": "^2.7.0"
   },
   "peerDependencies": {
     "mocha": "^2.2.1",
