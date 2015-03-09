@@ -1,0 +1,44 @@
+{
+  "name": "mocha-runner",
+  "version": "1.0.0",
+  "description": "A simple mocha runner that includes chai, sinon, sinon-chai and chai-fuzzy and accepts a list of globs to expand",
+  "main": "lib/mocha-runner.js",
+  "scripts": {
+    "test": "node ./bin/runner.js 'specs/**/*.js'",
+    "lint": "eslint --format 'node_modules/eslint-friendly-formatter' lib/ bin/ specs/ -c './configs/eslint.json'",
+    "coverage": "istanbul cover -x 'specs/**/*.js' ./bin/runner.js 'specs/**/*.js' html text-summary",
+    "coverage-cache": "istanbul cover -x 'specs/**/*.js' ./bin/runner.js 'specs/**/*.js' html text-summary -- --useCache=true",
+    "watch": "npm run coverage && watch-spawn -p 'specs/**/*.js' -p 'bin/**/*.js' -p 'lib/**/*.js' npm run coverage-cache"
+  },
+  "bin": {
+    "mocha-runner": "./bin/runner.js"
+  },
+  "repository": "royriojas/esbeautifier",
+  "license": "MIT",
+  "author": {
+    "name": "Roy Riojas",
+    "url": "http://royriojas.com"
+  },
+  "devDependencies": {
+    "eslint": "^0.16.1",
+    "eslint-friendly-formatter": "^1.0.3",
+    "istanbul": "^0.3.7",
+    "proxyquire": "^1.4.0",
+    "watch-run": "^1.2.2",
+    "watch-spawn": "^1.0.1"
+  },
+  "dependencies": {
+    "chai": "^1.10.0",
+    "chai-fuzzy": "^1.4.0",
+    "file-entry-cache": "^1.0.1",
+    "glob-expand": "0.0.2",
+    "lodash.merge": "^3.0.2",
+    "mocha": "^2.2.0",
+    "obj-util": "^1.0.0",
+    "optionator": "^0.5.0",
+    "read-json-sync": "^1.1.0",
+    "sinon": "^1.13.0",
+    "sinon-chai": "^2.7.0",
+    "stringformat": "0.0.5"
+  }
+}
