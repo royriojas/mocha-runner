@@ -1,6 +1,6 @@
 {
   "name": "mocha-runner",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple mocha runner that includes chai, sinon, sinon-chai and chai-fuzzy and accepts a list of globs to run",
   "main": "lib/mocha-runner.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "bin": {
     "mocha-runner": "./bin/runner.js"
   },
-  "repository": "royriojas/esbeautifier",
+  "repository": "royriojas/mocha-runner",
   "license": "MIT",
   "author": {
     "name": "Roy Riojas",
