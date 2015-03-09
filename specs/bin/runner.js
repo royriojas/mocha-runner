@@ -1,5 +1,5 @@
 describe('runner', function () {
-  var proxyquire = require('proxyquire').noCallThru().noPreserveCache();;
+  var proxyquire = require('proxyquire').noCallThru().noPreserveCache();
 
   var processMock;
   var cliMock;
@@ -27,7 +27,7 @@ describe('runner', function () {
         callback(2);
       }
     };
-    var runner = proxyquire('../../bin/runner.js', {
+    proxyquire('../../bin/runner.js', {
       '../lib/console': mockConsole,
       '../lib/process': processMock,
       '../lib/cli': cliMock
@@ -43,7 +43,7 @@ describe('runner', function () {
         callback(0);
       }
     };
-    var runner = proxyquire('../../bin/runner.js', {
+    proxyquire('../../bin/runner.js', {
       '../lib/process': processMock,
       '../lib/cli': cliMock
     });
@@ -53,11 +53,11 @@ describe('runner', function () {
 
   it ('should do nothing in case in case of a successful execution', function () {
     cliMock = {
-      run: function (args, callback) {
+      run: function () {
         throw new Error('Some Error');
       }
     };
-    var runner = proxyquire('../../bin/runner.js', {
+    proxyquire('../../bin/runner.js', {
       '../lib/process': processMock,
       '../lib/cli': cliMock
     });
