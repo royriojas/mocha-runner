@@ -1,6 +1,6 @@
 {
   "name": "mocha-runner",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple mocha runner that includes chai, sinon, sinon-chai and chai-fuzzy and accepts a list of globs to run",
   "main": "lib/mocha-runner.js",
   "scripts": {
@@ -24,21 +24,9 @@
     "eslint-friendly-formatter": "^1.0.3",
     "istanbul": "^0.3.7",
     "proxyquire": "^1.4.0",
-    "watch-spawn": "^1.0.1",
-    "mocha": "^2.2.1",
-    "chai": "^1.10.0",
-    "chai-fuzzy": "^1.4.0",
-    "sinon": "1.12.2",
-    "sinon-chai": "^2.7.0"
+    "watch-spawn": "^1.0.1"
   },
-  "peerDependencies": {
-    "mocha": "^2.2.1",
-    "chai": "^1.10.0",
-    "chai-fuzzy": "^1.4.0",
-    "sinon": "1.12.2",
-    "sinon-chai": "^2.7.0",
-    "proxyquire": "^1.4.0"
-  },
+
   "dependencies": {
     "file-entry-cache": "^1.0.1",
     "glob-expand": "0.0.2",
@@ -46,6 +34,11 @@
     "obj-util": "^1.0.0",
     "optionator": "^0.5.0",
     "read-json-sync": "^1.1.0",
-    "stringformat": "0.0.5"
+    "stringformat": "0.0.5",
+    "chai": "^1.10.0",
+    "chai-fuzzy": "^1.4.0",
+    "sinon": "1.12.2",
+    "sinon-chai": "^2.7.0",
+    "mocha": "^2.2.1"
   }
 }
