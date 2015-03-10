@@ -1,6 +1,6 @@
 {
   "name": "mocha-runner",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple mocha runner that includes chai, sinon, sinon-chai and chai-fuzzy and accepts a list of globs to run",
   "main": "lib/mocha-runner.js",
   "scripts": {
@@ -28,15 +28,16 @@
     "mocha": "^2.2.1",
     "chai": "^1.10.0",
     "chai-fuzzy": "^1.4.0",
-    "sinon": "^1.12.2",
+    "sinon": "1.12.2",
     "sinon-chai": "^2.7.0"
   },
   "peerDependencies": {
     "mocha": "^2.2.1",
     "chai": "^1.10.0",
     "chai-fuzzy": "^1.4.0",
-    "sinon": "^1.12.2",
-    "sinon-chai": "^2.7.0"
+    "sinon": "1.12.2",
+    "sinon-chai": "^2.7.0",
+    "proxyquire": "^1.4.0"
   },
   "dependencies": {
     "file-entry-cache": "^1.0.1",
