@@ -1,6 +1,6 @@
 {
   "name": "mocha-runner",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple mocha runner that includes chai, sinon, sinon-chai and chai-fuzzy and accepts a list of globs to run",
   "main": "lib/mocha-runner.js",
   "scripts": {
@@ -13,12 +13,12 @@
   "bin": {
     "mocha-runner": "./bin/runner.js"
   },
-  "repository": "royriojas/mocha-runner",
-  "license": "MIT",
-  "author": {
-    "name": "Roy Riojas",
-    "url": "http://royriojas.com"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/royriojas/mocha-runner"
   },
+  "license": "MIT",
+  "author": "Roy Riojas (http://royriojas.com)",
   "devDependencies": {
     "eslint": "^0.16.1",
     "eslint-friendly-formatter": "^1.0.3",
@@ -26,7 +26,6 @@
     "proxyquire": "^1.4.0",
     "watch-spawn": "^1.0.1"
   },
-
   "dependencies": {
     "file-entry-cache": "^1.0.1",
     "glob-expand": "0.0.2",
@@ -40,5 +39,20 @@
     "sinon": "1.12.2",
     "sinon-chai": "^2.7.0",
     "mocha": "^2.2.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/royriojas/mocha-runner/issues"
+  },
+  "homepage": "https://github.com/royriojas/mocha-runner",
+  "keywords": [
+    "mocha",
+    "mocha",
+    "runner",
+    "chai",
+    "chai-sinon",
+    "integration",
+    "run",
+    "specs",
+    "globs"
+  ]
 }
