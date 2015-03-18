@@ -66,5 +66,12 @@
     "run",
     "specs",
     "globs"
-  ]
+  ],
+  "changelogx": {
+    "issueIDRegExp" : "#(\\d+)",
+    "commitURL": "https://github.com/royriojas/mocha-runner/commit/{0}",
+    "authorURL": "https://github.com/{0}",
+    "issueIDURL": "https://github.com/royriojas/mocha-runner/issues/{0}",
+    "projectName": "mocha-runner"
+  }
 }
