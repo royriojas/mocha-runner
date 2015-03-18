@@ -1,6 +1,6 @@
 {
   "name": "mocha-runner",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "A simple mocha runner that includes chai, sinon, sinon-chai and chai-fuzzy and accepts a list of globs to run",
   "main": "lib/mocha-runner.js",
   "scripts": {
@@ -68,7 +68,7 @@
     "globs"
   ],
   "changelogx": {
-    "issueIDRegExp" : "#(\\d+)",
+    "issueIDRegExp": "#(\\d+)",
     "commitURL": "https://github.com/royriojas/mocha-runner/commit/{0}",
     "authorURL": "https://github.com/{0}",
     "issueIDURL": "https://github.com/royriojas/mocha-runner/issues/{0}",
