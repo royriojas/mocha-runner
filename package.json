@@ -1,14 +1,20 @@
 {
   "name": "mocha-runner",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A simple mocha runner that includes chai, sinon, sinon-chai and chai-fuzzy and accepts a list of globs to run",
   "main": "lib/mocha-runner.js",
   "scripts": {
+    "beautify": "esbeautifier 'bin/**/*.js' 'lib/**/*.js' 'specs/**/*.js'",
+    "beautify-check": "esbeautifier -k 'bin/**/*.js' 'lib/**/*.js' 'specs/**/*.js'",
     "test": "node ./bin/runner.js 'specs/**/*.js'",
-    "lint": "eslint --format 'node_modules/eslint-friendly-formatter' lib/ bin/ specs/ -c './configs/eslint.json'",
+    "eslint": "eslint --format 'node_modules/eslint-friendly-formatter' lib/ bin/ specs/ -c './configs/eslint.json'",
     "coverage": "istanbul cover -x 'specs/**/*.js' ./bin/runner.js 'specs/**/*.js' html text-summary",
     "coverage-cache": "istanbul cover -x 'specs/**/*.js' ./bin/runner.js 'specs/**/*.js' html text-summary -- --useCache=true",
-    "watch": "npm run coverage && watch-spawn -p 'specs/**/*.js' -p 'bin/**/*.js' -p 'lib/**/*.js' npm run coverage-cache"
+    "watch": "npm run coverage && watch-spawn -p 'specs/**/*.js' -p 'bin/**/*.js' -p 'lib/**/*.js' npm run coverage-cache",
+    "check": "npm run beautify-check && npm run eslint",
+    "prepush": "npm run check && npm test",
+    "changelog": "changelogx -f markdown -o ./changelog.md",
+    "install-hooks": "prepush install && changelogx install-hook"
   },
   "bin": {
     "mocha-runner": "./bin/runner.js"
@@ -20,25 +26,28 @@
   "license": "MIT",
   "author": "Roy Riojas (http://royriojas.com)",
   "devDependencies": {
+    "changelogx": "^1.0.5",
     "eslint": "^0.16.1",
     "eslint-friendly-formatter": "^1.0.3",
     "istanbul": "^0.3.7",
+    "prepush": "^1.0.6",
     "proxyquire": "^1.4.0",
     "watch-spawn": "^1.0.1"
   },
   "dependencies": {
+    "chai": "^1.10.0",
+    "chai-fuzzy": "^1.4.0",
     "file-entry-cache": "^1.0.1",
     "glob-expand": "0.0.2",
     "lodash.merge": "^3.0.2",
+    "mocha": "^2.2.1",
     "obj-util": "^1.0.0",
     "optionator": "^0.5.0",
     "read-json-sync": "^1.1.0",
-    "stringformat": "0.0.5",
-    "chai": "^1.10.0",
-    "chai-fuzzy": "^1.4.0",
     "sinon": "1.12.2",
     "sinon-chai": "^2.7.0",
-    "mocha": "^2.2.1"
+    "stringformat": "0.0.5",
+    "underscore": "^1.8.2"
   },
   "bugs": {
     "url": "https://github.com/royriojas/mocha-runner/issues"
