@@ -64,9 +64,12 @@ describe( 'sinon', function () {
 
   } );
 
-  it('should allow create spyObjects with no objects', function () {
+  it( 'should allow create spyObjects with no objects', function () {
     var me = this;
-    var obj = me.sandbox.createSpyObj('someObj', ['fn1', 'fn2']);
+    var obj = me.sandbox.createSpyObj( 'someObj', [
+      'fn1',
+      'fn2'
+    ] );
 
     obj.fn1( 'an Argument' );
     obj.fn2( 'another argument' );
@@ -74,5 +77,5 @@ describe( 'sinon', function () {
     expect( obj.fn1 ).to.have.been.calledWith( 'an Argument' );
     expect( obj.fn2 ).to.have.been.calledWith( 'another argument' );
 
-  });
+  } );
 } );

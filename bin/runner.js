@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-var process = require('../lib/process');
-var console = require('../lib/console');
+var process = require( '../lib/process' );
+var console = require( '../lib/console' );
 
 try {
   require( '../lib/cli' ).run( process.argv, function ( err ) {

@@ -69,4 +69,5 @@ npm run coverage-cache # will execute only the test that changed. Coverage repor
 npm run watch # will watch for changes on the specified files and run
 ```
 
+## [Changelog](./changelog.md)
 

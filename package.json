@@ -16,6 +16,9 @@
     "changelog": "changelogx -f markdown -o ./changelog.md",
     "install-hooks": "prepush install && changelogx install-hook"
   },
+  "prepush": [
+    "npm run prepush"
+  ],
   "bin": {
     "mocha-runner": "./bin/runner.js"
   },
