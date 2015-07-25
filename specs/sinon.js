@@ -78,4 +78,17 @@ describe( 'sinon', function () {
     expect( obj.fn2 ).to.have.been.calledWith( 'another argument' );
 
   } );
+
+  it( 'should allow do partial matches', function () {
+    var me = this;
+    var spy = me.sandbox.spy();
+    spy( {
+      type: 'foo:bar',
+      prop: 'other'
+    } );
+
+    expect( spy ).to.have.been.calledWith( me.sandbox.match( {
+      type: 'foo:bar'
+    } ) );
+  } );
 } );
