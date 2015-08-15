@@ -9,13 +9,9 @@ describe( 'sinon', function () {
     var me = this;
     var spy = me.sandbox.spy();
 
-    spy( 'some', {
-      arg: 'ument'
-    } );
+    spy( 'some', { arg: 'ument' } );
 
-    expect( spy ).to.have.been.calledWith( 'some', {
-      arg: 'ument'
-    } );
+    expect( spy ).to.have.been.calledWith( 'some', { arg: 'ument' } );
   } );
 
   it( 'should be able to create multiple spies in an object', function () {
@@ -28,10 +24,7 @@ describe( 'sinon', function () {
       }
     };
 
-    this.sandbox.spyMany( obj, [
-      'fn1',
-      'fn2'
-    ] );
+    this.sandbox.spyMany( obj, [ 'fn1', 'fn2' ] );
 
     obj.fn1( 'an Argument' );
     obj.fn2( 'another argument' );
@@ -51,10 +44,7 @@ describe( 'sinon', function () {
       }
     };
 
-    this.sandbox.stubMany( obj, [
-      'fn1',
-      'fn2'
-    ] );
+    this.sandbox.stubMany( obj, [ 'fn1', 'fn2' ] );
 
     obj.fn1( 'an Argument' );
     obj.fn2( 'another argument' );
@@ -66,10 +56,7 @@ describe( 'sinon', function () {
 
   it( 'should allow create spyObjects with no objects', function () {
     var me = this;
-    var obj = me.sandbox.createSpyObj( 'someObj', [
-      'fn1',
-      'fn2'
-    ] );
+    var obj = me.sandbox.createSpyObj( 'someObj', [ 'fn1', 'fn2' ] );
 
     obj.fn1( 'an Argument' );
     obj.fn2( 'another argument' );
@@ -82,10 +69,7 @@ describe( 'sinon', function () {
   it( 'should allow do partial matches', function () {
     var me = this;
     var spy = me.sandbox.spy();
-    spy( {
-      type: 'foo:bar',
-      prop: 'other'
-    } );
+    spy( { type: 'foo:bar', prop: 'other' } );
 
     expect( spy ).to.have.been.calledWith( me.sandbox.match( {
       type: 'foo:bar'
