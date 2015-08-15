@@ -1,5 +1,10 @@
 
 # mocha-runner - Changelog
+## v1.1.1
+- **Build Scripts Changes**
+  - Update deps - [5edbb4b]( https://github.com/royriojas/mocha-runner/commit/5edbb4b ), [royriojas](https://github.com/royriojas), 15/08/2015 01:58:21
+
+    
 ## v1.1.0
 - **Refactoring**
   - Updated to use latest clix and support grep - [853ff9d]( https://github.com/royriojas/mocha-runner/commit/853ff9d ), [royriojas](https://github.com/royriojas), 15/08/2015 01:29:45
