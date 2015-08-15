@@ -1,6 +1,6 @@
 {
   "name": "mocha-runner",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple mocha runner that includes chai, sinon, sinon-chai and chai-fuzzy and accepts a list of globs to run",
   "main": "lib/mocha-runner.js",
   "scripts": {
