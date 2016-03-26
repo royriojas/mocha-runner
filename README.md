@@ -11,25 +11,35 @@
 ## install
 
 ```bash
-# usually is enough to install it as a dev dependency since this is for testing 
-npm i --save-dev mocha-runner 
+# usually is enough to install it as a dev dependency since this is for testing
+npm i --save-dev mocha-runner
 ```
 
-## usage 
+## usage
 
 ### Options
 ```
-Usage: mocha-runner [globs] [options]
+`mocha-runner` is yet another mocha cli with includes sinon, mocha and chai
+
+========================================================
+Usage: mocha-runner [options] glob [glob1] [glob2]..[globN]
+========================================================
 
 Options:
-  -h, --help                 Show this help
-  -c, --config path::String  path to your mocha config. If none provided, it will first try to find a
-                             `./mocha.json` file in the current directory. If none found it will use the default
-                             ones. See mocha options here: http://mochajs.org/
-  -v, --version              Outputs the version number
-  -u, --useCache
-      If true will filter the files returning only the ones that changed after the last run, if this is false the
-      cache will be destroyed and created again the next time this flag is set to true. By default this is false
+  -u, --use-cache        If true will filter the files returning only the ones that changed after the last run, if this is false the cache will be
+                         destroyed and created again the next time this flag is set to true. By default this is false
+  -g, --grep String      only run tests matching
+  -f, --fgrep String     only run tests matching
+  -b, --bail             fail on the first error
+  -r, --reporter String  Reporter, default to spec
+  -t, --timeout Number   mocha tests timeout
+  -h, --help             Show this help
+  -v, --version          Outputs the version number
+  -q, --quiet            Show only the summary info - default: false
+  --colored-output       Use colored output in logs
+  --stack                if true, uncaught errors will show the stack trace if available
+  -c, --config String    path to your mocha config. If none provided, it will first try to find a `./mocha.json` file in the current directory. If
+                         none found it will use the default ones. See mocha options here: http://mochajs.org/
 ```
 
 ### Example
@@ -40,7 +50,7 @@ From the command line
 # or node node_modules/mocha-runner/bin/runner.js if installed as dev-dependency
 mocha-runner --config='./path-to-mocha-config.json' 'specs/**/*.js' 'another/directory/**/*.js'
 ```
-or in your package.json, **(Recommended)**, paired with [istanbul](https://www.npmjs.com/package/istanbul) and 
+or in your package.json, **(Recommended)**, paired with [istanbul](https://www.npmjs.com/package/istanbul) and
 [watch-spawn](https://www.npmjs.com/package/watch-spawn)
 
 ```javascript
@@ -54,8 +64,8 @@ or in your package.json, **(Recommended)**, paired with [istanbul](https://www.n
      "coverage-cache": "istanbul cover -x 'specs/**/*.js' ./bin/runner.js 'specs/**/*.js' html text-summary -- --useCache=true",
      // pair it with watch-spawn and execute the tests only on the specs that changed
      // or when the sources files change, this will save tons of time if running this on a project with several files
-     // Or at least save some noise to focus only on the modified specs. 
-     "watch": "npm run coverage && watch-spawn -p 'specs/**/*.js' -p 'bin/**/*.js' -p 'lib/**/*.js' npm run coverage-cache" 
+     // Or at least save some noise to focus only on the modified specs.
+     "watch": "npm run coverage && watch-spawn -p 'specs/**/*.js' -p 'bin/**/*.js' -p 'lib/**/*.js' npm run coverage-cache"
   }
 }
 ```

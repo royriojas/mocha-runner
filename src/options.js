@@ -9,7 +9,7 @@ module.exports = {
   },
   //useDefaultOptions: true,
   optionator: {
-    prepend: '`mocha-runner` is yet another mocha cli with includes sinon, mocha and chai\n\n========================================================\nUsage: simpless [options] glob [glob1] [glob2]..[globN]\n========================================================',
+    prepend: '`mocha-runner` is yet another mocha cli with includes sinon, mocha and chai\n\n========================================================\nUsage: mocha-runner [options] glob [glob1] [glob2]..[globN]\n========================================================',
     options: [
       {
         heading: 'Options'
@@ -44,13 +44,13 @@ module.exports = {
         alias: 'r',
         type: 'String',
         description: 'Reporter, default to spec'
-      }//,
-      // {
-      //   option: 'growl',
-      //   alias: 'w',
-      //   type: 'Boolean',
-      //   description: 'Wheter to use a growl notification at the end of the tests'
-      // }
+      },
+      {
+        option: 'timeout',
+        alias: 't',
+        type: 'Number',
+        description: 'mocha tests timeout'
+      }
     ]
   }
 };
