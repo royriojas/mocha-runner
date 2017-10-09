@@ -54,7 +54,7 @@
     "clix": "^2.0.8",
     "extend": "^3.0.0",
     "file-entry-cache": "^1.0.1",
-    "mocha": "^2.2.1",
+    "mocha": "^4.0.0",
     "obj-util": "^1.0.0",
     "sinon": "^1.12.2",
     "sinon-chai": "^2.7.0",
