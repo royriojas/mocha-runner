@@ -39,8 +39,8 @@
   "license": "MIT",
   "author": "Roy Riojas (http://royriojas.com)",
   "devDependencies": {
-    "changelogx": "^1.0.18",
-    "esbeautifier": "^4.2.9",
+    "changelogx": "^2.0.1",
+    "esbeautifier": "^10.1.1",
     "eslinter": "^2.3.2",
     "istanbul": "^0.3.17",
     "precommit": "^1.1.5",
@@ -51,10 +51,10 @@
   "dependencies": {
     "chai": "^1.10.0",
     "chai-fuzzy": "^1.4.0",
-    "clix": "^2.0.8",
+    "clix": "^2.2.2",
     "extend": "^3.0.0",
     "file-entry-cache": "^1.0.1",
-    "mocha": "^2.2.1",
+    "mocha": "^5.2.0",
     "obj-util": "^1.0.0",
     "sinon": "^1.12.2",
     "sinon-chai": "^2.7.0",
