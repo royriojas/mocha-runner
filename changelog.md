@@ -1,5 +1,10 @@
 
 # mocha-runner - Changelog
+## v2.0.1
+- **Refactoring**
+  - Upgrade node versions in travis - [924e0a7]( https://github.com/royriojas/mocha-runner/commit/924e0a7 ), [Roy Riojas](https://github.com/Roy Riojas), 14/08/2018 12:19:39
+
+    
 ## v2.0.0
 - **Refactoring**
   - Beautified code - [2df66a7]( https://github.com/royriojas/mocha-runner/commit/2df66a7 ), [Roy Riojas](https://github.com/Roy Riojas), 13/08/2018 20:02:35
