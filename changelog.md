@@ -1,5 +1,14 @@
 
 # mocha-runner - Changelog
+## v2.0.0
+- **Refactoring**
+  - Beautified code - [2df66a7]( https://github.com/royriojas/mocha-runner/commit/2df66a7 ), [Roy Riojas](https://github.com/Roy Riojas), 13/08/2018 20:02:35
+
+    
+- **Build Scripts Changes**
+  - Upgrade deps - [d454ed2]( https://github.com/royriojas/mocha-runner/commit/d454ed2 ), [Roy Riojas](https://github.com/Roy Riojas), 13/08/2018 20:01:50
+
+    
 ## v1.1.2
 - **Bug Fixes**
   - wrong help description and add timeout option in cli - [cb4924b]( https://github.com/royriojas/mocha-runner/commit/cb4924b ), [Roy Riojas](https://github.com/Roy Riojas), 25/03/2016 19:42:22
