@@ -9,9 +9,13 @@ describe( 'sinon', function () {
     var me = this;
     var spy = me.sandbox.spy();
 
-    spy( 'some', { arg: 'ument' } );
+    spy( 'some', {
+      arg: 'ument'
+    } );
 
-    expect( spy ).to.have.been.calledWith( 'some', { arg: 'ument' } );
+    expect( spy ).to.have.been.calledWith( 'some', {
+      arg: 'ument'
+    } );
   } );
 
   it( 'should be able to create multiple spies in an object', function () {
@@ -69,7 +73,10 @@ describe( 'sinon', function () {
   it( 'should allow do partial matches', function () {
     var me = this;
     var spy = me.sandbox.spy();
-    spy( { type: 'foo:bar', prop: 'other' } );
+    spy( {
+      type: 'foo:bar',
+      prop: 'other'
+    } );
 
     expect( spy ).to.have.been.calledWith( me.sandbox.match( {
       type: 'foo:bar'
