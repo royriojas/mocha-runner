@@ -1,5 +1,10 @@
 
 # mocha-runner - Changelog
+## v3.0.0
+- **Refactoring**
+  - Upgrade deps to remove nasty audit warning - [96c2a82]( https://github.com/royriojas/mocha-runner/commit/96c2a82 ), [Roy](https://github.com/Roy), 11/06/2019 03:09:00
+
+    
 ## v2.0.1
 - **Refactoring**
   - Upgrade node versions in travis - [924e0a7]( https://github.com/royriojas/mocha-runner/commit/924e0a7 ), [Roy Riojas](https://github.com/Roy Riojas), 14/08/2018 12:19:39
