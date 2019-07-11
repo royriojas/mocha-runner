@@ -51,15 +51,15 @@
   "dependencies": {
     "chai": "^1.10.0",
     "chai-fuzzy": "^1.4.0",
-    "clix": "^3.0.0",
-    "extend": "^3.0.0",
+    "clix": "3.0.0",
+    "extend": "3.0.2",
     "file-entry-cache": "^1.0.1",
     "mocha": "^5.2.0",
     "obj-util": "^1.0.0",
     "sinon": "^1.12.2",
     "sinon-chai": "^2.7.0",
     "stringformat": "0.0.5",
-    "underscore": "^1.8.2"
+    "underscore": "1.9.1"
   },
   "bugs": {
     "url": "https://github.com/royriojas/mocha-runner/issues"
