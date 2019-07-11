@@ -1,5 +1,10 @@
 
 # mocha-runner - Changelog
+## v3.0.1
+- **Build Scripts Changes**
+  - Upgrade prod dependencies - [d35e136]( https://github.com/royriojas/mocha-runner/commit/d35e136 ), [Roy Riojas](https://github.com/Roy Riojas), 11/07/2019 03:01:14
+
+    
 ## v3.0.0
 - **Refactoring**
   - Upgrade deps to remove nasty audit warning - [96c2a82]( https://github.com/royriojas/mocha-runner/commit/96c2a82 ), [Roy](https://github.com/Roy), 11/06/2019 03:09:00
