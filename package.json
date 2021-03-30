@@ -59,7 +59,7 @@
     "sinon": "^1.12.2",
     "sinon-chai": "^2.7.0",
     "stringformat": "0.0.5",
-    "underscore": "1.9.1"
+    "underscore": "1.12.1"
   },
   "bugs": {
     "url": "https://github.com/royriojas/mocha-runner/issues"
