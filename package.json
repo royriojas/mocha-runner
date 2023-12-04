@@ -51,7 +51,7 @@
   "dependencies": {
     "chai": "^1.10.0",
     "chai-fuzzy": "^1.4.0",
-    "clix": "3.0.0",
+    "clix": "5.0.0",
     "extend": "3.0.2",
     "file-entry-cache": "^1.0.1",
     "mocha": "^5.2.0",
