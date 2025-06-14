@@ -53,7 +53,7 @@
     "chai-fuzzy": "^1.4.0",
     "clix": "3.0.0",
     "extend": "3.0.2",
-    "file-entry-cache": "^1.0.1",
+    "file-entry-cache": "^4.0.0",
     "mocha": "^5.2.0",
     "obj-util": "^1.0.0",
     "sinon": "^1.12.2",
